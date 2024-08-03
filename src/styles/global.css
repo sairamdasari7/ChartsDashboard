@@ -1,0 +1,123 @@
+/* Light Mode Styles */
+body {
+    --background: #ffffff; /* Main background color */
+    --text: #333333;       /* Main text color */
+    --header-bg: #f8f9fa;  /* Header background */
+    --footer-bg: #f8f9fa;  /* Footer background */
+    --sidebar-bg: #ffffff; /* Sidebar background */
+    --widget-bg: #ffffff;  /* Widget background */
+    --widget-border: #dddddd; /* Widget border color */
+    --link-color: #007bff; /* Sidebar link color */
+    --link-hover-color: #0056b3; /* Sidebar link hover color */
+    --border-radius: 8px;  /* General border radius */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for widgets */
+  }
+  
+  /* General Body Styles */
+  body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: var(--header-bg);
+    color: var(--text);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: var(--footer-bg);
+    color: var(--text);
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--text);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 2rem;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+  }
+  
+  .sidebar a {
+    color: var(--link-color);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: var(--border-radius);
+  }
+  
+  .sidebar a:hover {
+    background-color: #f1f1f1;
+    color: var(--link-hover-color);
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    margin-left: 250px;
+    padding: 2rem;
+    background-color: var(--background);
+    color: var(--text);
+    transition: margin-left 0.3s;
+  }
+  
+  /* Widget Styles */
+  .widget {
+    background-color: var(--widget-bg);
+    color: var(--text);
+    border: 1px solid var(--widget-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .widget h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  
+  /* Light Mode Toggle Button */
+  .light-mode-toggle {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--header-bg);
+    border: none;
+    color: var(--text);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .light-mode-toggle:hover {
+    background-color: #e2e6ea;
+    color: var(--link-color);
+  }
+  

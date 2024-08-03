@@ -1,0 +1,122 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    --background: #121212; /* Main background color */
+    --text: #e0e0e0;       /* Main text color */
+    --header-bg: #1f1f1f;  /* Header background */
+    --footer-bg: #1f1f1f;  /* Footer background */
+    --sidebar-bg: #1f1f1f; /* Sidebar background */
+    --widget-bg: #1f1f1f;  /* Widget background */
+    --widget-border: #333; /* Widget border color */
+    --link-color: #bb86fc; /* Sidebar link color */
+    --link-hover-color: #9b86fc; /* Sidebar link hover color */
+    --border-radius: 8px;  /* General border radius */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for widgets */
+  }
+  
+  /* General Body Styles */
+  body.dark-mode {
+    background-color: #162447;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Header Styles */
+  body.dark-mode .header {
+    background-color: #162447;
+    color: #e0e0e0;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  body.dark-mode .header h1 {
+    margin: 0;
+  }
+  
+  /* Footer Styles */
+  body.dark-mode .footer {
+    background-color: #162447;
+    color: #e0e0e0;
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #333;
+  }
+  
+  /* Sidebar Styles */
+  body.dark-mode .sidebar {
+    background-color: #162447;
+    color: var(--text);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 2rem;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s;
+  }
+  
+  body.dark-mode .sidebar a {
+    color: #e0e0e0;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: var(--border-radius);
+  }
+  
+  body.dark-mode .sidebar a:hover {
+    background-color: #162447;
+    color: #e0e0e0;
+  }
+  
+  /* Main Content Styles */
+  body.dark-mode .main-content {
+    margin-left: 250px;
+    padding: 2rem;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    transition: margin-left 0.3s;
+  }
+  
+  /* Widget Styles */
+  body.dark-mode .widget {
+    background-color: var(--widget-bg);
+    color: var(--text);
+    border: 1px solid var(--widget-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  body.dark-mode .widget h3 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+  }
+  
+  /* Dark Mode Toggle Button */
+  body.dark-mode .dark-mode-toggle {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--header-bg);
+    border: none;
+    color: var(--text);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode .dark-mode-toggle:hover {
+    background-color: var(--link-hover-color);
+  }
+  
