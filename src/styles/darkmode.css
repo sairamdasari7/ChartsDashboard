@@ -37,6 +37,13 @@ body.dark-mode {
   body.dark-mode .header h1 {
     margin: 0;
   }
+
+  body.dark-mode .header-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5;
+  }
   
   /* Footer Styles */
   body.dark-mode .footer {

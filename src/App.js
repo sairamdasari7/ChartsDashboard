@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
-import MainContent from './pages/Overview'; 
+import Overview from './pages/Overview'; 
+import Analytics from './pages/Analytics'; 
+import Settings from './pages/Settings';
 import Footer from './components/Footer';
 import { StateProvider, useStateContext } from './context/StateContext';
 
@@ -20,7 +23,11 @@ const AppContent = () => {
       <Header />
       <Sidebar />
       <main className="main-content">
-        <MainContent />
+        <Routes>
+          <Route path="/" element={<Overview />} />
+          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/settings" element={<Settings />} />
+        </Routes>
       </main>
       <Footer />
     </div>
@@ -29,7 +36,9 @@ const AppContent = () => {
 
 const App = () => (
   <StateProvider>
-    <AppContent />
+    <Router>
+      <AppContent />
+    </Router>
   </StateProvider>
 );
 

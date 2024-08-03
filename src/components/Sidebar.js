@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
-      <a href="/">Overview</a>
-      <a href="/analytics">Analytics</a>
-      <a href="/settings">Settings</a>
+      <Link to="/">Overview</Link>
+      <Link to="/analytics">Analytics</Link>
+      <Link to="/settings">Settings</Link>
     </aside>
   );
 };

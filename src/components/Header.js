@@ -11,10 +11,11 @@ const Header = () => {
           <li>Settings</li>
         </ul>
       </nav>
-      <div>
-        <span>Profile</span>
-        <span>Notifications</span>
-        <DarkModeToggle />
+      <h1>Dashboard</h1>
+      <div className="header-span">
+        <div><span>Profile</span></div>
+        <div><span>Notifications</span></div>
+        <div><DarkModeToggle /></div>
       </div>
     </header>
   );
