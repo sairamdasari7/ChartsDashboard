@@ -13,9 +13,9 @@ const Header = () => {
       </nav>
     <h1>DashBoard</h1>
       <div>
-        <span>Profile</span>
-        <span>Notifications</span>
-        <DarkModeToggle />
+        <div><span>Profile</span></div>
+        <div><span>Notifications</span></div>
+        <div><DarkModeToggle /></div>
       </div>
     </header>
   );
