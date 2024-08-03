@@ -11,6 +11,7 @@ const Header = () => {
           <li>Settings</li>
         </ul>
       </nav>
+    <h1>DashBoard</h1>
       <div>
         <span>Profile</span>
         <span>Notifications</span>
